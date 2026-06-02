@@ -1,0 +1,24 @@
+package src.repository;
+
+import src.entity.Aluno;
+import java.util.ArrayList;
+
+public class AlunoRepository {
+    private ArrayList<Aluno> alunos = new ArrayList<>();
+
+    public void cadastrar(Aluno a) {
+        alunos.add(a);
+    }
+
+    public ArrayList<Aluno> getAlunos() {
+        return alunos;
+    }
+
+    public Aluno buscarPorMatricula(int matricula) {
+        for (Aluno a : alunos) {
+            if (a.getMatricula() == matricula)
+                return a;
+        }
+        return null;
+    }
+}
