@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface DisciplinaRepository extends JpaRepository<Disciplina, Integer> {
-    // Fica vazio. Note o "Integer" no final, pois o ID do código é int.
 }

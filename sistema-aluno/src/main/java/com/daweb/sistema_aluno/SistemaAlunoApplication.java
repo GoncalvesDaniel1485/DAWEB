@@ -13,8 +13,6 @@ public class SistemaAlunoApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        System.out.println("\n=============================================");
-        System.out.println("  PROJETO SPRING BOOT INICIADO COM SUCESSO!  ");
-        System.out.println("=============================================\n");
+        System.out.println("  PROJETO SPRING BOOT INICIADO ");
     }
 }

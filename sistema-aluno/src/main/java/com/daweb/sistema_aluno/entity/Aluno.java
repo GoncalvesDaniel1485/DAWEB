@@ -20,12 +20,10 @@ public class Aluno {
     @ManyToMany(fetch = FetchType.EAGER)
     private List<Disciplina> disciplinas;
 
-    // Construtor vazio obrigatório para o JPA
     public Aluno() {
         this.disciplinas = new ArrayList<>();
     }
 
-    // Seu construtor original
     public Aluno(int matricula, String nome, String cpf, int idade) {
         this.matricula = matricula;
         this.nome = nome;

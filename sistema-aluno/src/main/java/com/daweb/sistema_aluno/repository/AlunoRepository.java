@@ -6,5 +6,4 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AlunoRepository extends JpaRepository<Aluno, Integer> {
-    // Fica vazio. Note o "Integer" no final, pois o ID da sua matrícula é int.
 }

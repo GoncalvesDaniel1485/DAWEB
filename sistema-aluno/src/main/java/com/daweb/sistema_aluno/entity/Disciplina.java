@@ -19,12 +19,10 @@ public class Disciplina {
     @ManyToMany(mappedBy = "disciplinas")
     private List<Aluno> alunos;
 
-    // Construtor vazio obrigatório para o JPA
     public Disciplina() {
         this.alunos = new ArrayList<>();
     }
 
-    // Seu construtor original
     public Disciplina(int cod, String nome, String professor, String curso) {
         this.cod = cod;
         this.nome = nome;
