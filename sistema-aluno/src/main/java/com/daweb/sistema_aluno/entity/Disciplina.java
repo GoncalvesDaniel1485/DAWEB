@@ -4,6 +4,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToMany;
 import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.util.ArrayList;
 
 @Entity
@@ -17,6 +20,7 @@ public class Disciplina {
     private String curso;
 
     @ManyToMany(mappedBy = "disciplinas")
+    @JsonIgnore
     private List<Aluno> alunos;
 
     public Disciplina() {
